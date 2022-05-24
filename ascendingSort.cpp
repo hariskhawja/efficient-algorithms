@@ -1,32 +1,17 @@
 #include <iostream>
-#include <list>
+#include <vector>
 
-void ascendingSort(int* test) {
+void ascendingSort(std::vector<int>* vect) {
 
-    /*
-    for(int round = 0; round < sizeof(&array) / sizeof(&array[0]); round++) {
-
-        for(int element = 0; round < sizeof(&array) / sizeof(&array[0]); element++) {
-            break;
-        }
-
-    }
-    */
-
-
-   *test += 1;
-
-   std::cout << *test;
-   std::cout << test;
+    vect->push_back(2);
+    
 }
 
 int main() {
 
-    int array[] = {2, 3, 4, 5, 6, 7};
+    std::vector<int> vect = {2, 3, 4, 5, 6, 7};
 
-    int test = 51;
-
-    ascendingSort(&test);
+    ascendingSort(vect);
 
     return 0;
 }
