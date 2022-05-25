@@ -23,7 +23,7 @@ int main() {
     std::getline(std::cin, text);
 
     std::string num = "";
-
+/*
     for(int part = 0; part < text.size(); part++) {
 
         if(isspace(text[part])) {
@@ -48,6 +48,17 @@ int main() {
 
         std::cout << vect[i] << std::endl;
 
+    }
+*/
+
+    for(int val, i = 0; (std::cin >> val) && i < text.size(); i++) {
+
+        vect.push_back(val);
+
+    }
+
+    for(int i = 0; i < vect.size(); i++) {
+        std::cout << vect[i] << std::endl;
     }
 
     return 0;
