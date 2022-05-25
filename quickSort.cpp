@@ -6,8 +6,6 @@ void quickSort(std::vector<int> &vect) {
 
     for(int i = 0; i < vect.size(); i++) {
 
-        std::cout << vect[i] << std::endl;
-
     }
 
     vect.push_back(69);
@@ -16,50 +14,9 @@ void quickSort(std::vector<int> &vect) {
 
 int main() {
 
-    std::string text;
+    std::vector<int> vect = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-    std::vector<int> vect;
-
-    std::getline(std::cin, text);
-
-    std::string num = "";
-/*
-    for(int part = 0; part < text.size(); part++) {
-
-        if(isspace(text[part])) {
-            //std::cout << text[part] << std::endl;
-            int x = std::stoi(num);
-            //std::cout << x << s\td::endl;
-            vect.push_back(x);
-            num = "";
-        }
-
-        else {
-            //std::cout << text[part] << std::endl;
-            num += text[part];
-            //std::cout << "NUM: " << num << std::endl;
-        }
-
-    }
-
-    std::cout << vect.size() << std::endl;
-
-    for(int i = 0; i < vect.size(); i++) {
-
-        std::cout << vect[i] << std::endl;
-
-    }
-*/
-
-    for(int val, i = 0; (std::cin >> val) && i < text.size(); i++) {
-
-        vect.push_back(val);
-
-    }
-
-    for(int i = 0; i < vect.size(); i++) {
-        std::cout << vect[i] << std::endl;
-    }
+    quickSort(vect);
 
     return 0;
 }
