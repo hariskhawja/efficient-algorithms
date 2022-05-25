@@ -22,7 +22,31 @@ int main() {
 
     std::getline(std::cin, text);
 
-    //quickSort(vect);
+    for(int part = 0; part < text.size(); part++) {
+
+        std::string num = "";
+
+        if(isspace(text[part])) {
+            //std::cout << std::stoi(num) << std::endl;
+            std::cout << text[part] << std::endl;
+            int x = std::stoi(num);
+            std::cout << x << std::endl;
+            vect.push_back(x);
+        }
+
+        else {
+            std::cout << text[part] << std::endl;
+            num += text[part];
+            std::cout << "NUM: " << num << std::endl;
+        }
+
+    }
+
+    for(int i = 0; i < vect.size(); i++) {
+
+        std::cout << vect[i];
+
+    }
 
     return 0;
 }
