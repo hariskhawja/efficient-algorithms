@@ -4,11 +4,26 @@
 
 void quickSort(std::vector<int> &vect) {
 
-    for(int i = 0; i < vect.size(); i++) {
+    int pivot = vect[vect.size() - 1];
+    int savedNum;
+
+    for(int num = 0; num < vect.size(); num++) {
+
+        if(pivot > num) {
+
+
+
+        }
+
+        else {
+
+            if(num < savedNum) {
+                savedNum = num;
+            }
+
+        }
 
     }
-
-    vect.push_back(69);
     
 }
 
